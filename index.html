@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="container">
+        <div class="glass">
+          <div class="modeSelector">
+            <button
+              class="modeSelector__Button active"
+              id="pomodoroButton"
+              data-mode="pomodoro"
+            >
+              Pomodoro
+            </button>
+            <button
+              class="modeSelector__Button"
+              id="shortButton"
+              data-mode="short"
+            >
+              Short Break
+            </button>
+            <button
+              class="modeSelector__Button"
+              id="longButton"
+              data-mode="long"
+            >
+              Long Break
+            </button>
+          </div>
+          <div class="timerControl">
+            <!-- <i class="fa fa-refresh" id="restart" aria-hidden="true"></i> -->
+            <i
+              class="fa fa-play"
+              id="toggle"
+              data-paused="true"
+              aria-hidden="true"
+            ></i>
+            <!-- <i class="fa fa-pause" id="pause" aria-hidden="true"></i> -->
+            <!-- <i class="fa fa-stop" aria-hidden="true"></i> -->
+          </div>
+        </div>
+        <h1 class="timer" id="timer" data-mode="pomodoro">25:00</h1>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
